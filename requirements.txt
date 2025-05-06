@@ -1,5 +1,6 @@
 nicegui
-git+https://github.com/agnostic-ai/phi.git
+langchain
 duckduckgo-search
 python-dotenv
+openai
 groq
