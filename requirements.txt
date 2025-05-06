@@ -1,6 +1,5 @@
 nicegui
-langchain
+phidata
 duckduckgo-search
 python-dotenv
-openai
 groq
