@@ -1,0 +1,5 @@
+nicegui
+phi
+duckduckgo-search
+python-dotenv
+groq
