@@ -4,13 +4,13 @@ from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
 from dotenv import load_dotenv
 import asyncio
-
+import os
 load_dotenv()
 
 # Initialize the Agent with detailed instructions
 web_search_agent = Agent(
     name="Professional Web Researcher",
-    model=Groq(id="llama3-8b-8192", temperature=0.3, max_tokens=1024),
+    model=Groq(id="llama3-8b-8192", temperature=0.3, max_tokens=1024,api_key=os.getenv("GROQ_API_KEY")),
     tools=[DuckDuckGo()],
     instructions="""
 You are a senior web search assistant providing comprehensive, well-structured answers with proper sourcing. Follow these guidelines:
